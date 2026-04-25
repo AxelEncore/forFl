@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Тест генерации PDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/vendor/DejaVuSans-normal.js"></script>
+    <script src="js/contract.js"></script>
+</head>
+<body>
+    <h1>Тест генерации договора</h1>
+    <button onclick="generateContractPDF(testData)">Скачать PDF</button>
+
+    <script>
+        // Тестовые данные для договора
+        const testData = {
+            contractNumber: '0001',
+            city: 'Москва',
+            contractDate: '2026-04-25',
+            customerFullname: 'Иванов Иван Иванович',
+            executorFullname: 'Петров Петр Петрович',
+            workAddress: 'ул. Тестовая, д. 1',
+            startDate: '2026-05-01',
+            endDate: '2026-05-30',
+            price: 50000,
+            materialsIncluded: false,
+            customerPassportSeries: '1234',
+            customerPassportNumber: '567890',
+            customerPassportIssuedBy: 'ОВД г. Москвы',
+            customerAddress: 'г. Москва, ул. Пушкина, д. 1',
+            customerPhone: '+7 (999) 123-45-67',
+            executorPassportSeries: '4321',
+            executorPassportNumber: '098765',
+            executorPassportIssuedBy: 'ОВД г. Москвы',
+            executorPhone: '+7 (888) 123-45-67'
+        };
+    </script>
+</body>
+</html>
