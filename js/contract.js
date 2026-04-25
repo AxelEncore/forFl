@@ -8,7 +8,7 @@ async function generateContractPDF(data) {
     });
     
     // ПРОБЛЕМА ЗДЕСЬ: шрифт не подключается
-    doc.setFont("DejaVuSans");
+    doc.setFont('DejaVuSans', 'normal');
     
     doc.setFontSize(16);
     doc.text("ДОГОВОР № " + data.contractNumber, 105, 25, { align: 'center' });
